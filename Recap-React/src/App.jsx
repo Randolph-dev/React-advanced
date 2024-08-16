@@ -1,10 +1,14 @@
-import { useState } from 'react'
+import {About as _About} from "./About"
 import './App.css'
 
 const App = () => {
+  const someString = "Hello World";
   return (
-    <div>Home</div>
-  )
-}
+    <div>
+      Home
+      <_About string={someString}/>
+    </div>
+  );
+};
 
-export default App
+export default App;
