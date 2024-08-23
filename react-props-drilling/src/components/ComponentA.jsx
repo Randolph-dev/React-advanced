@@ -1,7 +1,9 @@
+import useData from "../../contexts/useData";
 import ComponentB from "./ComponentB";
 
-const ComponentA = (props) => {
-  const { data } = props;
+const ComponentA = () => {
+  const { data, setData } = useData();
+  console.log("dat in Component A Re-rendered");
 
   return (
     <div>
@@ -23,7 +25,7 @@ const ComponentA = (props) => {
           })}
         </div>
       </div>
-      <ComponentB data={setData} />
+      <ComponentB />
     </div>
   );
 };

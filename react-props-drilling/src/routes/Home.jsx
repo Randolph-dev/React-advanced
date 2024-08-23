@@ -3,12 +3,15 @@ import { url } from "../api/api";
 import ComponentA from "../components/ComponentA";
 import { getData } from "../services/apiRequests";
 import { useEffect, useState } from "react";
+import useData from "../../contexts/useData";
 
-const data = await getData(url);
+// const data = await getData(url);
 
-console.log("Data: ", data);
 
 const Home = () => {
+  const  { data } = useData;
+
+  console.log("Data: ", data);
 
   useEffect(() => {
     if (!data) {
@@ -23,7 +26,7 @@ const Home = () => {
       <Typography variant="h6" component="h2">
         Home
       </Typography>
-      <ComponentA data={setData} />
+      <ComponentA />
     </div>
   );
 };

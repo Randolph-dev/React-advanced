@@ -2,6 +2,7 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { DataProvider } from '../contexts/DataContext';
 import Home from './routes/Home';
 import Root from './routes/Root';
 
