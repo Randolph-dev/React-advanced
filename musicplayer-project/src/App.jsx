@@ -1,8 +1,8 @@
 import { useState } from "react";
 import './App.css'
-import { PlayerControls } from "./components/PlayerControls.jsx";
-import { TrackList } from "./components/TrackList";
-import { MusicContext } from "./context/MusicContext";
+import { PlayerControls } from "./components/PlayerControls";
+import { TrackList } from "./components/tracksList";
+import { MusicContext } from "./context/musicContext";
 import sinister from "./assets/sinister.mp3";
 import stomping from "./assets/stomp.mp3";
 import underwater from "./assets/underwater.mp3";

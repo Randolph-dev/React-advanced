@@ -1,10 +1,9 @@
-import { useMusicPlayer } from "../../hooks/useMusicPlayer"
+import { useMusicPlayer } from "../hooks/useMusicPlayer"
 
 const TrackList = () => {
     const music = useMusicPlayer();
 
-    return 
-    (
+    return (
     <>
     {music.trackList.map((track, index) => (
         <div key={`${track}_${index}`}>
@@ -13,11 +12,9 @@ const TrackList = () => {
             </button>
             <div>Track Playing: {track.name}</div>
         </div>
-    ))
-    
-    }
+    ))}
     </>
-    )
-}
+    );
+};
 
 export { TrackList };

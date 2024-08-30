@@ -1,4 +1,5 @@
-import { useMusicPlayer } from "../../hooks/useMusicPlayer";
+import { useMusicPlayer } from "../hooks/useMusicPlayer";
+// import { play_arrow } from '@mui/material/SvgIcon';
 
 const PlayerControls = () => {
     const music = useMusicPlayer();
