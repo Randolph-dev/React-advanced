@@ -1,13 +1,20 @@
-import Button from 'bootstrap';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Cart from "./components/Cart";
+import List from "./components/list";
+import StoreNavBar from "./components/StoreNavBar";
 
-function App() {
-
+const App = () => {
   return (
-    <>
-      <div>App will be here</div>
-      <Button>Click me</Button>
-    </>
-  )
-}
+    <div>
+      <BrowserRouter>
+      <StoreNavBar />
+        <Routes>
+          <Route path="/" element={<List />} />
+          <Route path="/cart" element={<Cart />} />
+        </Routes>
+      </BrowserRouter>
+    </div>
+  );
+};
 
-export default App
+export default App;
